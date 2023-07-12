@@ -1,0 +1,146 @@
+.main-container {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    &__btn {
+        max-width: 200px;
+        margin: 30px auto !important;
+        position: absolute;
+        top: 800px;
+        left: 40%;
+
+        &:active {
+            &+.main-container__cards {
+                &>.card--3 {
+                    transform: translateX(0);
+
+                    // .card__content--3 {
+                    //     transform: translateX(0);
+                    // }
+                }
+
+                &>.card--secret {
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+}
+
+.button {
+    background: #C63F28;
+    text-align: center;
+    padding: 14px 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 1px;
+    transition: background 300ms ease-in-out;
+
+    &:hover {
+        background: #7A001B;
+    }
+}
+
+.btn--2 {
+    background: #7A001B;
+
+    &:hover {
+        background: #C63F28;
+    }
+}
+
+.card__container {
+    background: rgb(238, 243, 245);
+    z-index: 1;
+    position: relative;
+    height: 750px;
+    width: 330px;
+}
+
+.card--1 {
+    left: 0;
+}
+
+.card--secret {
+    left: 33%;
+    transform: translateX(-110%);
+    transition: transform 700ms cubic-bezier(.49, .18, .23, 1);
+    ;
+    z-index: -1;
+    position: relative;
+}
+
+.card--3 {
+    left: 66%;
+    transform: translateX(-110%);
+    transition: transform 700ms cubic-bezier(.49, .18, .23, 1);
+    ;
+}
+
+
+.card {
+    margin-top: 30px;
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+
+    &__header {
+        height: 210px;
+        position: relative;
+
+        &--1 {
+            background: url("./img/photo-paysage-dautomne-6.jpg") bottom/cover;
+        }
+
+        &--2 {
+            background: url("./img/Naviguer-en-securite-automne.jpg") bottom/cover;
+            // transform: translateX(-110%);
+            // transition: transform 500ms cubic-bezier(.49, .18, .23, 1);
+        }
+
+        &--3 {
+            background: url("./img/carte_automne_Qc.jpg") bottom/cover;
+        }
+
+        &--title {
+            position: absolute;
+            bottom: 0;
+            background: rgba(#7A001B, 0.99);
+            width: 100%;
+            padding: 14px 0 14px 15px;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__content {
+        background: rgba(#C63F28, 0.08);
+        padding: 15px 15px 25px;
+
+        // &--2 {
+        //     transform: translateX(-110%);
+        //     transition: transform 500ms cubic-bezier(.49, .18, .23, 1);
+        // }
+
+        &--text {
+            background: rgb(238, 243, 245);
+            padding: 10px 20px 10px 10px;
+            margin-bottom: 15px;
+        }
+
+        &--btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

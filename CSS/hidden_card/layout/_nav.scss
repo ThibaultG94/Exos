@@ -1,0 +1,30 @@
+nav {
+    background: #7A001B;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 10px;
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        margin-left: 25px;
+        transition: transform 100ms, font-weight 150ms;
+
+        &:hover {
+            transform: scale(1.05);
+            font-weight: 500;
+        }
+    }
+
+    a {
+        font-size: 1.1rem;
+    }
+}
