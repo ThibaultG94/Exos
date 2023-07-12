@@ -1,0 +1,35 @@
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    section {
+        background: $white;
+        line-height: 22px;
+        margin: 0 auto;
+        padding: 78px 0 50px;
+        width: 764px;
+    }
+
+    &-link {
+        background-color: $color-secondary;
+        color: #000;
+
+        &:hover,
+        .content-link:focus {
+            font-weight: 700;
+        }
+    }
+}
+
+.decorative-aside {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background: $color-secondary;
+
+    &-image {
+        position: absolute;
+        left: -100px;
+        top: 240px;
+    }
+}
