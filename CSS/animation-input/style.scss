@@ -1,0 +1,96 @@
+$cd-txt: #6300a0;
+$cd-txt--invalid: #fff;
+$cd-box: #fff;
+$cd-danger: #b20a37;
+$cd-primary: #031B30;
+$cd-secondary: #11D499;
+
+$ball-size: 300px;
+$shake-intensity: 1%;
+
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(237, 246, 247);
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.form {
+    &__group {
+
+        label {
+            color: $cd-txt;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        input {
+            border: 2px solid $cd-box;
+            border-radius: 100rem;
+            color: $cd-txt;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            outline: none;
+            padding: 0.5rem 1.5rem;
+            width: 100%;
+            margin-bottom: 100px;
+
+            &:focus {
+                border: 2px solid $cd-txt;
+            }
+
+            &:not(:focus):invalid {
+                background: $cd-danger;
+                border: 2px solid $cd-danger;
+                color: $cd-txt--invalid;
+                animation: headshake 100ms cubic-bezier(.4, .1, .6, .9) 2;
+            }
+        }
+    }
+}
+
+
+@keyframes headshake {
+    25% {
+        transform: translateX($shake-intensity);
+    }
+
+    75% {
+        transform: translateX(-$shake-intensity);
+    }
+}
+
+
+
+.btn {
+    background: $cd-primary;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    border-radius: 10rem;
+    color: $cd-box;
+    margin-bottom: 100px;
+
+    &:active+.ball {
+        transform: scale(1);
+    }
+}
+
+.ball {
+    width: $ball-size;
+    height: $ball-size;
+    background: $cd-secondary;
+    margin-bottom: 1rem;
+    border-radius: $ball-size * 0.5;
+    transform: scale(0.1);
+    transition: transform 4000ms;
+}

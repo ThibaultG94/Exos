@@ -1,0 +1,82 @@
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: rgb(237, 246, 247);
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.form__group label {
+  color: #6300a0;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.form__group input {
+  border: 2px solid #fff;
+  border-radius: 100rem;
+  color: #6300a0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.form__group input:focus {
+  border: 2px solid #6300a0;
+}
+.form__group input:not(:focus):invalid {
+  background: #b20a37;
+  border: 2px solid #b20a37;
+  color: #fff;
+  -webkit-animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+          animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+}
+
+@-webkit-keyframes headshake {
+  25% {
+    transform: translateX(1%);
+  }
+  75% {
+    transform: translateX(-1%);
+  }
+}
+
+@keyframes headshake {
+  25% {
+    transform: translateX(1%);
+  }
+  75% {
+    transform: translateX(-1%);
+  }
+}
+.btn {
+  background: #031B30;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
+  color: #fff;
+  margin-bottom: 100px;
+}
+.btn:active + .ball {
+  transform: scale(1);
+}
+
+.ball {
+  width: 300px;
+  height: 300px;
+  background: #11D499;
+  margin-bottom: 1rem;
+  border-radius: 150px;
+  transform: scale(0.1);
+  transition: transform 4000ms;
+}/*# sourceMappingURL=style.css.map */
