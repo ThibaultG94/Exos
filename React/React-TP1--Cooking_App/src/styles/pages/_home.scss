@@ -1,0 +1,57 @@
+.app {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+h1 {
+	color: $color-1;
+	margin: 20px 0;
+	font-size: 2.5rem;
+}
+
+.meal-title {
+	margin-bottom: 20px;
+	height: 40px;
+}
+
+input {
+	padding: 10px 20px;
+	font-size: 1.3rem;
+	border-radius: 10px;
+	width: 400px;
+	margin-bottom: 15px;
+	border: 1px solid black;
+	margin: 0 auto 30px;
+}
+
+.meals {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 10px;
+}
+
+.card {
+	border: 1px solid $color-1;
+	padding: 30px 25px;
+	border-radius: 10px;
+	flex: 1 0 20%;
+	margin: 5px;
+	max-width: 400px;
+}
+
+img {
+	height: 260px;
+	border-radius: 10px;
+	margin: 15px 0;
+}
+
+.recette {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-height: 200px;
+	display: -webkit-box;
+	-webkit-line-clamp: 10;
+	-webkit-box-orient: vertical;
+}
