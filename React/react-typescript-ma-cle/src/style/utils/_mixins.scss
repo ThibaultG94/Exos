@@ -1,0 +1,5 @@
+@mixin childAlign($justify) {
+	display: flex;
+	align-items: center;
+	justify-content: $justify;
+}
