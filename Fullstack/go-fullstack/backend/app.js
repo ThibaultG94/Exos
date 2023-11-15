@@ -6,7 +6,6 @@ const app = express();
 
 mongoose
 	.connect(
-		'mongodb+srv://Salem:miaouh2017@app-js-fullstack.bcbuyrt.mongodb.net/test',
 		{
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
