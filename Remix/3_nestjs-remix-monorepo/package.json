@@ -1,0 +1,17 @@
+{
+  "name": "nestjs-remix-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "packageManager": "npm@10.2.3",
+  "workspaces": [
+    "backend",
+    "frontend",
+    "packages/*"
+  ]
+}
