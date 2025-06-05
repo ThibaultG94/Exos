@@ -1,0 +1,14 @@
+/home/thibault/work/CTask/bin/Debug/net8.0/CTask
+/home/thibault/work/CTask/bin/Debug/net8.0/CTask.deps.json
+/home/thibault/work/CTask/bin/Debug/net8.0/CTask.runtimeconfig.json
+/home/thibault/work/CTask/bin/Debug/net8.0/CTask.dll
+/home/thibault/work/CTask/bin/Debug/net8.0/CTask.pdb
+/home/thibault/work/CTask/obj/Debug/net8.0/CTask.GeneratedMSBuildEditorConfig.editorconfig
+/home/thibault/work/CTask/obj/Debug/net8.0/CTask.AssemblyInfoInputs.cache
+/home/thibault/work/CTask/obj/Debug/net8.0/CTask.AssemblyInfo.cs
+/home/thibault/work/CTask/obj/Debug/net8.0/CTask.csproj.CoreCompileInputs.cache
+/home/thibault/work/CTask/obj/Debug/net8.0/CTask.dll
+/home/thibault/work/CTask/obj/Debug/net8.0/refint/CTask.dll
+/home/thibault/work/CTask/obj/Debug/net8.0/CTask.pdb
+/home/thibault/work/CTask/obj/Debug/net8.0/CTask.genruntimeconfig.cache
+/home/thibault/work/CTask/obj/Debug/net8.0/ref/CTask.dll
