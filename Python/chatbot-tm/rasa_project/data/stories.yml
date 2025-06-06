@@ -1,0 +1,47 @@
+version: "3.1"
+
+stories:
+  - story: salutation et demande de fonctionnalités
+    steps:
+      - intent: saluer
+      - action: utter_saluer
+      - intent: demander_fonctionnalites
+      - action: utter_fonctionnalites
+
+  - story: demande d'utilisation
+    steps:
+      - intent: demander_utilisation
+      - action: utter_utilisation
+
+  - story: demande de contact support
+    steps:
+      - intent: demander_contact_support
+      - action: utter_contact_support
+
+  - story: au revoir
+    steps:
+      - intent: au_revoir
+      - action: utter_au_revoir
+
+  - story: création et modification d'une tâche
+    steps:
+      - intent: demander_creation_tache
+        entities:
+          - nom_tache: "acheter du lait"
+      - action: utter_confirmer_creation_tache
+      - action: action_set_slot_tache_en_cours
+      - intent: demander_modification_priorite
+        entities:
+          - priorite: "haute"
+      - action: utter_confirmer_modification_priorite
+      - action: action_update_tache
+
+  - story: demander des infos sur le dashboard
+    steps:
+      - intent: demander_info_dashboard
+      - action: utter_info_dashboard
+
+  - story: demander des conseils de productivité
+    steps:
+      - intent: demander_conseil_productivite
+      - action: utter_conseil_productivite

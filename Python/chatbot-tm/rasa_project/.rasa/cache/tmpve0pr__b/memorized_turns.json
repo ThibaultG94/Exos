@@ -1,0 +1,20 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEoBLF4UX5KYnJFaXFsbCwDUmR7Y": "utter_lister_taches",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEoBLF4UX5KYnJFaXEvArNISkFpULYRMjAUAyQ8+kA==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhuLSgoCgzN7UoviQxOSO1tjYWABTSH7k=": "utter_supprimer_tache",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhuLSgoCgzN7UoviQxOSO1loBppSUlQKXomgibGgsAWbxBMw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdGg/Um59ZVFsbCwBb5h06": "utter_au_revoir",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdGg/Um59ZVEvAnNKSktSieIRyfCbFAgDsfzm2": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhODGnNLWotjYWAAYLG/o=": "utter_saluer",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhODGnNLWoloAhpSUlqUXxULU4zYgFAOsnNfY=": "action_listen",
+    "eJydjkEKgDAMBL+SB/iCfkUkVAlYqKmkiZeSv1uw94K3HRiGXZsv0G6hB+OhqXCA9g3keFGAATlVJe6uVZLuJO6oAWrMRuKTiKmS4HB/NiZHTrvIBPfCTO7bC+4hUro=": "utter_content",
+    "eJydjlEKgCAQRK+yB+gEXiVCTBYSdI11tx/x7kn5b/Q3A28es9a2QD0ZL+u8hEwG6hssuYQGRomhCFJntSB3JlCvYqC4qMhtIlERZDvYn47JkUMTKts9E+G3Oz4/05lquwFk8W+g": "action_listen",
+    "eJydjkEKwCAMBL+SB/QFfqWUEEqggqYlJl7Ev1eod6G3HRiG3VvfoD3KFem0eEuA9g0UyhxgQorFWIbrhXU4UQZagELJWfsi4masON2fjcWRyzO7YiavFAv3frzo8lQD": "utter_encourager",
+    "eJydjkEKgDAMBL/SB/iCfkWkhLJowUZJEy/Fv1vQm4LibReGYfq6d66ugi1Q1LSwd/UcgSnDu+vMqSi4sVYgjUncrnpXaDbI/iIxVUi42J+Ol5DJMkxCJtsoFXwrAsfFhManqptwOABvUHNi": "utter_demander_aide",
+    "eJydjkEKhDAQBL+SB+wL8hVZwmAad8CMMpnxEvz7BvQoKN66oShqaPsntFWxJRqNF4mhHSMJFcRwnpmrQTrrFdoZln4thkqzQ/cbiZtB08m+dNyE/LzANRXyjbjiWRFkXFxpuqp6JcwoJLkP4owHzu8fl++TyA==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BCidlV9akloUX5KYnJFaWxsLANQ2Hsw=": "utter_ajouter_tache",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BCidlV9akloUX5KYnJFaS8Cs0hKQUlQthEyMBQDCmj5s": "action_listen"
+  }
+}

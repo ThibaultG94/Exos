@@ -1,0 +1,37 @@
+version: "3.1"
+
+rules:
+  - rule: Saluer en retour
+    steps:
+      - intent: saluer
+      - action: utter_saluer
+
+  - rule: Dire au revoir
+    steps:
+      - intent: au_revoir
+      - action: utter_au_revoir
+
+  - rule: Répondre aux questions sur les fonctionnalités
+    steps:
+      - intent: demander_fonctionnalites
+      - action: utter_fonctionnalites
+
+  - rule: Expliquer l'utilisation
+    steps:
+      - intent: demander_utilisation
+      - action: utter_utilisation
+
+  - rule: Fournir les informations de contact du support
+    steps:
+      - intent: demander_contact_support
+      - action: utter_contact_support
+
+  - rule: Gérer la frustration
+    steps:
+      - intent: exprimer_frustration
+      - action: utter_handle_frustration
+
+  - rule: Gérer les cas non prévus
+    steps:
+      - intent: fallback
+      - action: utter_fallback

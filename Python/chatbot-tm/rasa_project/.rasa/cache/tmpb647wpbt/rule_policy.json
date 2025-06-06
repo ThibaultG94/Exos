@@ -1,0 +1,32 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"au_revoir\"}}]": "utter_au_revoir",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"au_revoir\"}}, {\"prev_action\": {\"action_name\": \"utter_au_revoir\"}, \"user\": {\"intent\": \"au_revoir\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_contact_support\"}}]": "utter_contact_support",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_contact_support\"}}, {\"prev_action\": {\"action_name\": \"utter_contact_support\"}, \"user\": {\"intent\": \"demander_contact_support\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saluer\"}}]": "utter_saluer",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saluer\"}}, {\"prev_action\": {\"action_name\": \"utter_saluer\"}, \"user\": {\"intent\": \"saluer\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_fonctionnalites\"}}]": "utter_fonctionnalites",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_fonctionnalites\"}}, {\"prev_action\": {\"action_name\": \"utter_fonctionnalites\"}, \"user\": {\"intent\": \"demander_fonctionnalites\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"exprimer_frustration\"}}]": "utter_handle_frustration",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"exprimer_frustration\"}}, {\"prev_action\": {\"action_name\": \"utter_handle_frustration\"}, \"user\": {\"intent\": \"exprimer_frustration\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fallback\"}}]": "utter_fallback",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_fallback\"}, \"user\": {\"intent\": \"fallback\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_utilisation\"}}]": "utter_utilisation",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_utilisation\"}}, {\"prev_action\": {\"action_name\": \"utter_utilisation\"}, \"user\": {\"intent\": \"demander_utilisation\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_fallback\"}, \"user\": {\"intent\": \"fallback\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fallback\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"exprimer_frustration\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"exprimer_frustration\"}}, {\"prev_action\": {\"action_name\": \"utter_handle_frustration\"}, \"user\": {\"intent\": \"exprimer_frustration\"}}]",
+      "predicting default action with intent back",
+      "predicting default action with intent restart"
+    ]
+  }
+}

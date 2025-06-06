@@ -1,0 +1,87 @@
+version: "3.1"
+
+intents:
+  - saluer
+  - au_revoir
+  - demander_fonctionnalites
+  - demander_utilisation
+  - demander_contact_support
+  - exprimer_frustration
+  - fallback
+  - demander_creation_tache
+  - demander_modification_priorite
+  - demander_conseil_productivite
+  - demander_gestion_workspaces
+  - demander_info_dashboard
+
+responses:
+  utter_saluer:
+    - text: "Bonjour ! Je suis l'assistant de Task Manager. Comment puis-je vous aider ?"
+    - text: "Salut ! Comment je peux t'aider avec Task Manager aujourd'hui ?"
+    - text: "Coucou ! Besoin d'un coup de main avec Task Manager ?"
+
+  utter_au_revoir:
+    - text: "Merci d'avoir utilisé Task Manager. À bientôt !"
+
+  utter_fonctionnalites:
+    - text: "Task Manager vous permet de créer, modifier et supprimer des tâches, de les organiser par priorité et de définir des rappels."
+    - text: "Task Manager, c'est ton assistant perso pour gérer tes tâches. Tu peux créer, modifier, supprimer des tâches, les organiser par priorité et même mettre des rappels. C'est comme avoir un petit secrétaire dans ta poche !"
+
+  utter_utilisation:
+    - text: "Pour utiliser Task Manager, commencez par créer une tâche en cliquant sur le bouton '+'. Vous pouvez ensuite la modifier en cliquant dessus, ou la supprimer en la faisant glisser vers la droite."
+
+  utter_contact_support:
+    - text: "Pour contacter le support, veuillez envoyer un email à support@tskmngr.fr ou utiliser le formulaire de contact dans les paramètres de l'application."
+    - text: "Pas de souci, je comprends que tu aies besoin d'aide. Le plus simple, c'est d'envoyer un mail à support@tskmngr.fr. Sinon, dans l'app, va dans Paramètres > Contact, tu trouveras un formulaire super simple à remplir."
+
+  utter_handle_frustration:
+    - text: "Oups, je sens que je t'ai énervé. Ce n'était pas mon intention. Essayons de reprendre depuis le début. Qu'est-ce que tu voudrais savoir exactement sur Task Manager ?"
+    - text: "Oula, calme toi mon reuf ! Ne t'inquiètes pas ça va bien se passer ;)"
+    - text: "Désolé si je t'ai mis en rogne. On va essayer de repartir sur de bonnes bases. Tu veux qu'on parle de quoi ?"
+    - text: "Je comprends que ça puisse être frustrant. Reprenons depuis le début. Que voulez-vous faire exactement avec Task Manager ?"
+    - text: "Oups, on dirait que je vous ai énervé. Ce n'était pas mon intention. Dites-moi comment je peux vous aider avec Task Manager."
+
+  utter_fallback:
+    - text: "Désolé, je crois que j'ai pas bien saisi. Tu peux reformuler ou me poser une question sur les fonctionnalités de Task Manager ?"
+    - text: "Je suis désolé, je n'ai pas compris. Peux-tu répéter ou me demander quelque chose sur Task Manager ?"
+    - text: "Un peu hors sujet mon reuf, on est là pour parler de Task Manager, pas pour que tu me racontes ta vie ! Tu veux savoir quelque chose sur l'app ?"
+
+  utter_confirmer_creation_tache:
+    - text: "Super, j'ai créé la tâche '{nom_tache}'. Vous voulez lui ajouter une date limite ou une priorité ?"
+
+  utter_conseil_productivite:
+    - text: "Pour être plus productif, essayez la technique Pomodoro : travaillez 25 minutes, puis faites une pause de 5 minutes. Ça aide à rester concentré !"
+    - text: "Un bon truc pour gérer votre temps : commencez votre journée par la tâche la plus importante. Ça s'appelle 'Manger la grenouille' !"
+
+  utter_info_dashboard:
+    - text: "Le dashboard, c'est votre page d'accueil. Vous y trouvez un calendrier, vos tâches urgentes, et vos workspaces actifs. C'est comme votre cockpit pour gérer toutes vos activités !"
+
+  utter_confirmer_modification_priorite:
+    - text: "D'accord, j'ai modifié la priorité de la tâche. Autre chose que je peux faire pour vous ?"
+
+actions:
+  - action_set_slot_tache_en_cours
+  - action_update_tache
+
+slots:
+  tache_en_cours:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  workspace_en_cours:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  derniere_action:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,153 @@
+version: "3.1"
+
+nlu:
+  - intent: saluer
+    examples: |
+      - Salut
+      - Hello
+      - Coucou
+      - Yo
+      - Hé
+      - Bonjour
+      - Bonsoir
+      - Salutations
+      - Wesh
+
+  - intent: au_revoir
+    examples: |
+      - Au revoir
+      - À plus tard
+      - Merci, c'est tout
+      - C'est tout pour moi
+      - Je me tire !
+      - Bye
+      - Des bisous
+      - À la prochaine
+      - A plus dans l'bus !
+
+  - intent: demander_fonctionnalites
+    examples: |
+      - Que peut faire cette application ?
+      - Quelles sont les fonctionnalités de Task Manager ?
+      - Que fait Task Manager ?
+      - Pouvez-vous me décrire les caractéristiques de l'app ?
+      - C'est quoi task manager ?
+      - Qu'est-ce que ça fait cette app ?
+      - Tu peux m'expliquer à quoi ça sert ?
+      - C'est pour faire quoi en fait ?
+      - Quelles sont les fonctionnalités ?
+      - Ça fait quoi concrètement ?
+      - C'est quoi le délire de cette app ?
+      - Ça sert à quoi ce truc ?
+      - Explique-moi un peu le concept
+      - J'ai pas tout capté, tu peux m'en dire plus ?
+
+  - intent: demander_utilisation
+    examples: |
+      - Comment utiliser Task Manager ?
+      - Comment créer une tâche ?
+      - Comment supprimer une tâche ?
+      - Pouvez-vous m'expliquer comment ça marche ?
+
+  - intent: demander_contact_support
+    examples: |
+      - Comment contacter le support ?
+      - J'ai besoin d'aide, qui puis-je contacter ?
+      - Où puis-je obtenir de l'aide ?
+      - Y a-t-il un service client ?
+      - J'ai besoin d'aide
+      - Comment je contacte le support ?
+      - Y a un numéro pour appeler ?
+      - Je peux parler à quelqu'un ?
+      - Où je trouve le formulaire de contact ?
+      - C'est quoi l'adresse email du support ?
+      - Comment je fais pour contacter le support ?
+      - Je veux parler à un humain
+      - Je veux parler à un conseiller
+      - Je veux parler à un assistant
+      - Je veux parler à un représentant
+      - Je veux parler à un agent
+      - Je veux parler à un technicien
+      - Je veux parler à un expert
+      - Je veux parler à un professionnel
+      - Je veux parler à un spécialiste
+      - Je veux parler à un conseiller client
+      - Je veux parler à un conseiller technique
+      - Je veux parler à un conseiller support
+      - Je veux parler à un conseiller service client
+
+  - intent: exprimer_frustration
+    examples: |
+      - T'es nul comme bot
+      - Tu comprends rien à ce que je dis
+      - C'est pas du tout ce que je demande
+      - T'es vraiment pas utile
+      - Mais tu te fous de ma gueule ?
+      - T'es con ou quoi ?
+      - Tu sers à rien
+      - Tu me saoules
+      - Tu m'énerves
+      - Tu me casses les couilles
+      - Tu me casses les pieds
+      - Tu me casses les bonbons
+      - Tu me casses les burnes
+      - Tu me casses les noix
+      - Tu me casses les roustons
+      - Tu me casses les roubignoles
+      - Tu me casses les gonades
+      - Tu me casses les testicules
+      - Tu me casses les valseuses
+      - Tu me casses les bijoux de famille
+      - Tu me casses les joyeuses
+      - Tu me casses les coucougnettes
+      - Tu me casses les roubignolles
+
+  - intent: fallback
+    examples: |
+      - blablabla
+      - xyz123
+      - Je veux des pizzas
+      - Parle-moi de la philosophie
+      - Quel est le sens de la vie ?
+      - Quelle est la capitale de la France ?
+      - Quelle est la couleur du cheval blanc d'Henri IV ?
+      - Quelle est la réponse à la question ultime sur la vie, l'univers et le reste ?
+      - Quelle est la réponse à la grande question sur la vie, l'univers et le reste ?
+      - Quelle est la réponse à la grande question sur la vie, l'univers et le reste, le tout ?
+
+  - intent: demander_creation_tache
+    examples: |
+      - Comment je fais pour créer une nouvelle tâche ?
+      - Je veux ajouter un truc à faire
+      - C'est où qu'on balance une nouvelle tâche ?
+      - Tu peux m'aider à créer une tâche ?
+      - Je veux créer une tâche pour [acheter du lait](nom_tache)
+      - Ajoute une tâche [appeler maman](nom_tache) pour [demain](date)
+      - Nouvelle tâche : [finir le rapport](nom_tache), priorité [haute](priorite)
+
+  - intent: demander_gestion_workspaces
+    examples: |
+      - Comment ça marche les workspaces ?
+      - Je peux faire quoi avec les espaces de travail ?
+      - Explique-moi le concept des workspaces
+      - C'est quoi l'intérêt des workspaces ?
+
+  - intent: demander_conseil_productivite
+    examples: |
+      - T'as des astuces pour être plus productif ?
+      - Comment je peux mieux gérer mon temps ?
+      - File-moi des conseils pour être efficace
+      - Je galère à tout faire, tu peux m'aider ?
+
+  - intent: demander_info_dashboard
+    examples: |
+      - C'est quoi le dashboard ?
+      - Explique-moi la page d'accueil
+      - Qu'est-ce que je vois sur le dashboard ?
+
+  - intent: demander_modification_priorite
+    examples: |
+      - Je veux changer la priorité de ma tâche
+      - Peux-tu modifier la priorité ?
+      - Comment je change l'importance de cette tâche ?
+      - Mettre cette tâche en priorité haute
