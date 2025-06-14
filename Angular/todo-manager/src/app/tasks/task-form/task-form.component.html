@@ -1,0 +1,38 @@
+<form (ngSubmit)="onSubmit()" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="title">
+            Titre de la tâche
+        </label>
+        <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="title" type="text" placeholder="Entrez le titre de la tâche" [(ngModel)]="newTask.title" name="title"
+            required>
+    </div>
+
+    <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="description">
+            Description
+        </label>
+        <textarea
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="description" placeholder="Décrivez la tâche (optionnel)" [(ngModel)]="newTask.description"
+            name="description" rows="3"></textarea>
+    </div>
+
+    <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="dueDate">
+            Date d'échéance
+        </label>
+        <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="dueDate" type="date" [(ngModel)]="newTask.dueDate" name="dueDate">
+    </div>
+
+    <div class="flex items-center justify-between">
+        <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit">
+            Ajouter la tâche
+        </button>
+    </div>
+</form>
